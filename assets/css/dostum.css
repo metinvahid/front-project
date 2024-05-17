@@ -57,3 +57,95 @@
     display: flex;
     flex-direction: column;
 }
+
+.Numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Digits{
+    font-weight: 800;
+    margin-left: 40px;
+}
+
+.Customer{
+    margin-bottom: 5px;
+    line-height: 0%;
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.Mon-Sun{
+    font-weight: 800;
+    margin-left: 40px;
+}
+
+.Opening{
+    padding-left: 20px;
+}
+
+.GetQuote{
+
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    display: block;
+    margin-right: 0px;
+    margin-left: 100px;
+}
+
+.GetQuoteButton{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid  #333333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.GetQuoteButton span{
+    position: relative;
+    z-index: 2;
+}
+
+.GetQuoteButton::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    transition: all.35s;
+}
+
+.GetQuoteButton:hover{
+    color: white;
+}
+
+.GetQuoteButton:hover:after{
+width: 100%;
+}
+
+.GetQuote:hover{
+    background-color:#ffff ;
+    color: #333333;
+}
+
+.MainButton{
+    color: #f0f0f0;
+
+    margin-right: 0px;
+    text-decoration: none;
+    font-weight: 1000px;
+}

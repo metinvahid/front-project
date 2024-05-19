@@ -1,9 +1,27 @@
+
 .FirstNavbar{
     background-color: black;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items:center;
+}
+
+.InfNavbar{
+
+    padding: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MainNavbar{
+    background-color: #000000;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .First-Function{
@@ -16,7 +34,7 @@
     display: inline-block;
     padding: 10px 20px;
 
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif'';
     border: none;
@@ -27,17 +45,31 @@
 }
 
 .Logos{
-    margin-left: 120px;
+    margin-right: 420px;
+    color: whitesmoke;
 }
 
 .Logos a {
     margin-right: 20px;
+    color: #fff;
+   
 }
 
 .Logophoto{
-    width: 300px;
-    float: left;
-    margin-right: 10px;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 0;
+    margin-top: 120px;
+    margin-left: 10px;
+   
+    
+}
+
+.Dostum{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
 }
 
 .DostumMain{
@@ -45,7 +77,7 @@
     font-weight: 1000;
     line-height: 50%;
     color: black;
-    text-decoration: bisque;
+    text-decoration: rgb(202, 11, 27);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -86,7 +118,7 @@
     padding-left: 20px;
 }
 
-.GetQuote{
+.GetaQuote{
 
     top:50%;
     left:50%;
@@ -95,9 +127,10 @@
     display: block;
     margin-right: 0px;
     margin-left: 100px;
+    color: rgb(0, 0, 0)
 }
 
-.GetQuoteButton{
+.GetaQuoteButton{
     display: block;
     width: 200px;
     height: 40px;
@@ -113,12 +146,12 @@
     transition: all .35s;
 }
 
-.GetQuoteButton span{
+.GetaQuoteButton span{
     position: relative;
     z-index: 2;
 }
 
-.GetQuoteButton::after{
+.GetaQuoteButton:after{
     position: absolute;
     content: "";
     top: 0;
@@ -129,23 +162,754 @@
     transition: all.35s;
 }
 
-.GetQuoteButton:hover{
+.GetaQuoteButton:hover{
     color: white;
 }
 
-.GetQuoteButton:hover:after{
+.GetaQuoteButton:hover:after{
 width: 100%;
 }
 
-.GetQuote:hover{
-    background-color:#ffff ;
-    color: #333333;
+.GetaQuote:hover{
+    background-color:rgb(94, 85, 46) ;
+    color: #000000;
 }
 
+
 .MainButton{
-    color: #f0f0f0;
+    color: rgb(252, 252, 252);
 
     margin-right: 0px;
     text-decoration: none;
     font-weight: 1000px;
+}
+
+.MainHome{
+    margin-left: -150px;
+
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover{
+        box-shadow: 0 0 40px 40px rgb(185, 187, 95) inset;
+    }
+}
+
+.MainAbout{
+    background-color: black; 
+   
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }
+}
+
+.MainServices{
+    margin-left: -150px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+        box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }
+}
+
+.MainRooms{
+    margin-left: -150px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+        box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }
+}
+.MainAppoinment{
+
+    margin-left: -150px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+        box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }
+   
+}
+
+.MainTest{
+    margin-left: -150px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+        box-shadow: 0 0 40px 40px black inset;
+    }
+}
+
+.MainBlog{
+    margin-left: -150px;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+        box-shadow: 0 0 40px 40px black inset;
+    }
+}
+
+.container {
+    position: relative;
+    display:inline-block;
+}
+
+
+.hover-button {
+    background-color: transparent;
+    color: rgb(236, 229, 229);
+    padding: 80px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.hover-button:hover {
+    background-color: (94, 85, 46)  ;
+    color: rgb(94, 85, 46);
+    transition: 2s;
+}
+.main-button {
+    background-color: rgb(94, 85, 46); 
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(94, 85, 46);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+}
+
+.container:hover .dropdown-content {
+    display: block;
+}
+
+.Eng1{
+    background-color: rgb(0, 0, 2);
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }  
+}
+
+.Rus1{
+    background-color: rgb(0, 0, 2);
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }  
+
+}
+.Aze1{
+    background-color: rgb(0, 0, 2);
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }  
+
+}
+.preferences{
+    margin-right: 150px;
+}
+
+.L1{
+    background-color:rgb(94, 85, 46); 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(0, 0, 2) inset;
+    }
+}
+.L2{
+    background-color:rgb(94, 85, 46); 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(0, 0, 0) inset;
+    }
+}
+.L3{
+    background-color:rgb(94, 85, 46); 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(0, 0, 0) inset;
+    }
+}
+.L4{
+    background-color:rgb(94, 85, 46); 
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(0, 0, 0) inset;
+    }
+}
+
+.ul{
+    list-style: none;
+    background:pink;
+}
+.ul li{
+    display: inline-block;
+    position: relative;
+}
+.ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown{
+    width: 100px;
+    background: #ff02d5;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.Mid{
+    position: relative;
+    margin-left: 0px;
+}
+
+.img1{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+}
+
+.img2{
+    position:relative ;
+    top: 0;
+    left: 0;
+    right: 0%;
+    width: 1000px;
+    opacity: 0.5;
+    height: 690px;
+
+}
+
+
+/*--------------gallary--------*/
+/*--------------map--------*/
+.map iframe {
+    width: 100%;
+  }
+  
+  /*--------------map--------*/
+  /*--------------footer--------*/
+  footer h3 {
+    margin-bottom: 20px;
+  }
+
+.img3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    width: 1505px;
+    opacity: 0.5;
+    height: 680px;
+}
+
+
+/*.comfort{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    margin-left: 150px;
+    margin-top: 180px;
+    font-weight: 1000;
+    color: #000;
+}
+*/
+
+.comfort1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    margin-left: 550px;
+    margin-top: 200px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.prov{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    margin-left: 550px;
+    margin-top: 180px;
+    font-weight: 1000;
+    color: #000;
+}
+
+.booking{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    margin-left: 550px;
+    margin-top: 280px;
+    font-weight: 900;
+    color:#000;
+ 
+}
+
+.caring{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    margin-left: 550px;
+    margin-top: 350px;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ourservicebutton{
+ 
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    right: 80%;
+    margin-left: 15px;
+    margin-top: 400px;
+    font-weight: 200;
+    color: #ffffff;
+    border: 1px solid;
+    background-color: #000000;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+   
+
+}
+
+.contactusbutton{
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    right: 68%;
+    margin-left: 15px;
+    margin-top: 400px;
+    font-weight: 200;
+    color: #ffffff;
+    border: 1px solid;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+
+}
+
+.ourservicebutton:hover, .contactusbutton:hover {
+    background-color: rgb(94, 85, 46); 
+    transition: background-color 0.3s; 
+    color: #000000;
+}
+    
+    
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    height: -100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.language-dropdown button
+ {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.language-dropdown:hover button
+ {
+    background-color: #050000;
+    background-color: rgb(0, 0, 2);
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }  
+
+}
+
+/*----------------------------------------------------------------*/
+
+
+.currency-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.currency-dropdown button
+ {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+
+
+.currency-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.currency-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.currency-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.currency-dropdown:hover button
+ {
+    background-color: #050000;
+    background-color: rgb(0, 0, 2);
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }  
+
+}
+
+.Euro1{
+    background-color: #050000;
+    background-color: rgb(0, 0, 2);
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }  
+
+}
+.Dol1{
+    background-color: #050000;
+    background-color: rgb(0, 0, 2);
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px rgb(94, 85, 46) inset;
+    }  
+}
+
+
+@media only screen and (max-width: 600px) {
+    .FirstNavbar{
+        flex-direction: column;
+    }
+  }
+
+  /*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+*/
+.footer {
+    display: flex;
+    
+    padding: 20px 0;
+    text-align: center; /* Bölümleri ve içeriklerini ortalamak için */
+    justify-content: center; /* Bölümleri ortalamak için */
+
+}
+.FootLogo{
+    transform: scale(0.1);
+    margin-top: 0%;
+}
+
+.footer-container {
+    display: flex;
+  
+}
+
+.footer-section1,
+.footer-section2,
+.footer-section3,
+.footer-section4 {
+    flex: 0 1 auto; /* Bölümlerin genişliğini ayarlamak için */
+    margin: 0 200px; /* Bölümler arasındaki boşluk */
+    
+}
+
+.footer-section1 ul,
+.footer-section2 ul,
+.footer-section3 ul,
+.footer-section4 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section1 h3,
+.footer-section2 h3,
+.footer-section3 h3,
+.footer-section4 h3 {
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.footer-section1 ul li,
+.footer-section2 ul li,
+.footer-section3 ul li,
+.footer-section4 ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-section1 a,
+.footer-section2 a,
+.footer-section3 a,
+.footer-section4 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section1 a:hover,
+.footer-section2 a:hover,
+.footer-section3 a:hover,
+.footer-section4 a:hover {
+    text-decoration: underline;
+}
+
+.Aimcenter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

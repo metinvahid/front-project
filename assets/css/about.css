@@ -33,6 +33,91 @@ html, body {
   }
   
   
+  .container-main{
+    width: 80%;
+    margin: 0 auto;
+  }
   
-  
-  
+  .offer{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 360px;
+    height: 450px;
+    cursor: pointer;
+}
+
+.offer h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.offer p{
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.offer::after{
+    background: linear-gradient(180deg, transparent 0, #000);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 70%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.offer:hover .cover{
+    animation-name: cover;
+    animation-duration: 0.1s;
+    display: block;
+}
+@keyframes cover {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.cover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(13px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .9));
+}
+
+.content{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    bottom: 0;
+}
+
+.offer1{
+    background-image: url('../../images/BKU_691_aspect16x9.jpg');
+}
+
+
+.offer2{
+    background-image: url('../../images/BKU_262_original\ \(3\).jpg');
+}
+
+
+.offer3{
+    background-image: url('../../images/BKU_682_original.jpg');
+}
+
+
+.offer4{
+    background-image: url('../../images/BKU_143_aspect16x9.jpg  ');
+}
+.offer5{
+  background-image: url('../../images/BKU_108_aspect16x9\ \(1\).jpg');
+}

@@ -504,6 +504,24 @@ ul li ul.dropdown{
     width: 100%;
 }
 
+.detailsbutton{
+    font-weight: 200;
+    width: 216px;
+    height: 39px;
+    float: right;
+    margin-top: 50px;
+    color: #000;
+    border: 1px solid;
+    background-color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.detailsbutton:hover {
+    background-color: #000; 
+    transition: background-color 0.3s; 
+    color: #ffffff;
+}
 
 .desc a{
     align-items: center;
@@ -579,6 +597,10 @@ body {
     
 }
 
+
+.navbar-menu li a:hover {
+    color: rgba(100, 96, 96, 0.76);
+}
 .navbar-menu li {
     display: inline;
     margin-top: 95px;
@@ -1148,6 +1170,10 @@ body {
 .container-footer{
     width: 80%;
     margin: 0 auto;
+}
+
+.container-footer li a:hover {
+    color: rgba(100, 96, 96, 0.76);
 }
 
 .Top ul li a{

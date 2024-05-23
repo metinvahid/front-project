@@ -48,7 +48,7 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
-  height: 100px;
+  height: 50px;
 }
 
 .navbar-menu li {
@@ -76,16 +76,6 @@ body {
   text-decoration: none;
   padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
